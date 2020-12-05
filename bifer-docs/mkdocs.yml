@@ -1,4 +1,6 @@
 site_name: Bifer documentation
+theme:
+  name: material
 plugins:
     - encryptcontent:
         title_prefix: ''
