@@ -1,222 +1,727 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
+    
+    
+      
         <title>Coexistence - Bifer documentation</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">Bifer documentation</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Team <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="./" class="dropdown-item">On Boarding</a>
-</li>
-                                    
-<li>
-    <a href="./" class="dropdown-item">Rituals</a>
-</li>
-                                    
-<li>
-    <a href="./" class="dropdown-item active">Coexistence</a>
-</li>
-                                    
-<li>
-    <a href="index.md'" class="dropdown-item">Tools</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Business <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../business/" class="dropdown-item">Mutualization</a>
-</li>
-                                    
-<li>
-    <a href="../business/" class="dropdown-item">Resources</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../components/" class="dropdown-item">Felix</a>
-</li>
-                                    
-<li>
-    <a href="../components/" class="dropdown-item">Provision</a>
-</li>
-                                    
-<li>
-    <a href="../components/" class="dropdown-item">ACS</a>
-</li>
-                                    
-<li>
-    <a href="../components/" class="dropdown-item">Karajan</a>
-</li>
-                                    
-<li>
-    <a href="../components/" class="dropdown-item">Adagio/Limox</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Coding <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../coding/" class="dropdown-item">Agreements</a>
-</li>
-                                    
-<li>
-    <a href="../coding/" class="dropdown-item">Local env</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Systems <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../systems/" class="dropdown-item">DNS</a>
-</li>
-                                    
-<li>
-    <a href="../systems/" class="dropdown-item">Proxmox</a>
-</li>
-                                    
-<li>
-    <a href="../systems/" class="dropdown-item">Backups</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Infrastructure <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../infrastructure/" class="dropdown-item">Docker</a>
-</li>
-                                    
-<li>
-    <a href="../infrastructure/" class="dropdown-item">Rabbitmq</a>
-</li>
-                                    
-<li>
-    <a href="../infrastructure/" class="dropdown-item">Redis</a>
-</li>
-                                    
-<li>
-    <a href="../infrastructure/" class="dropdown-item">Redis</a>
-</li>
-                                    
-<li>
-    <a href="../infrastructure/" class="dropdown-item">Sentry</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cookbook <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../cookbook/" class="dropdown-item">Deploys</a>
-</li>
-                                    
-<li>
-    <a href="../cookbook/" class="dropdown-item">Tricks</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a rel="prev" href="./" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../business/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#team" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Bifer documentation" class="md-header-nav__button md-logo" aria-label="Bifer documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Bifer documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Coexistence
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Bifer documentation" class="md-nav__button md-logo" aria-label="Bifer documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Bifer documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    <label class="md-nav__link" for="nav-1">
+      Team
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Team" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        Team
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="./" class="md-nav__link">
+      On Boarding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="./" class="md-nav__link">
+      Rituals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Coexistence
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Coexistence
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team" class="md-nav__link">
+    Team
+  </a>
+  
+    <nav class="md-nav" aria-label="Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forte-athin-qui-in-potitus-manuque-pedibus" class="md-nav__link">
+    Forte Athin qui in potitus manuque pedibus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#luce-sedem-adficit-cragon-secundis-cognovit-velut" class="md-nav__link">
+    Luce sedem adficit Cragon secundis cognovit velut
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-patrio-et-habuit" class="md-nav__link">
+    E patrio et habuit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ungues-si-gravis" class="md-nav__link">
+    Ungues si gravis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="index.md'" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#team" class="nav-link">Team</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#forte-athin-qui-in-potitus-manuque-pedibus" class="nav-link">Forte Athin qui in potitus manuque pedibus</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#luce-sedem-adficit-cragon-secundis-cognovit-velut" class="nav-link">Luce sedem adficit Cragon secundis cognovit velut</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#e-patrio-et-habuit" class="nav-link">E patrio et habuit</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#ungues-si-gravis" class="nav-link">Ungues si gravis</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+      
+      
+      
 
-<div id="mkdocs-encrypted-content" style="display:none">/vFEOqO+EyoSivSWIIrwlQ==;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;^</div>
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Business
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Business" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Business
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../business/" class="md-nav__link">
+      Mutualization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../business/" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Components
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Components" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/" class="md-nav__link">
+      Felix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/" class="md-nav__link">
+      Provision
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/" class="md-nav__link">
+      ACS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/" class="md-nav__link">
+      Karajan
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/" class="md-nav__link">
+      Adagio/Limox
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Coding
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Coding" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Coding
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../coding/" class="md-nav__link">
+      Agreements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../coding/" class="md-nav__link">
+      Local env
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Systems
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Systems" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Systems
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../systems/" class="md-nav__link">
+      DNS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../systems/" class="md-nav__link">
+      Proxmox
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../systems/" class="md-nav__link">
+      Backups
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+    <label class="md-nav__link" for="nav-6">
+      Infrastructure
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Infrastructure" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Infrastructure
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../infrastructure/" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../infrastructure/" class="md-nav__link">
+      Rabbitmq
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../infrastructure/" class="md-nav__link">
+      Redis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../infrastructure/" class="md-nav__link">
+      Redis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../infrastructure/" class="md-nav__link">
+      Sentry
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+    <label class="md-nav__link" for="nav-7">
+      Cookbook
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Cookbook" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Cookbook
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cookbook/" class="md-nav__link">
+      Deploys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cookbook/" class="md-nav__link">
+      Tricks
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team" class="md-nav__link">
+    Team
+  </a>
+  
+    <nav class="md-nav" aria-label="Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forte-athin-qui-in-potitus-manuque-pedibus" class="md-nav__link">
+    Forte Athin qui in potitus manuque pedibus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#luce-sedem-adficit-cragon-secundis-cognovit-velut" class="md-nav__link">
+    Luce sedem adficit Cragon secundis cognovit velut
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-patrio-et-habuit" class="md-nav__link">
+    E patrio et habuit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ungues-si-gravis" class="md-nav__link">
+    Ungues si gravis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <div id="mkdocs-encrypted-content" style="display:none">b2gBBisMSgu39X9bWTkeaw==;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;^</div>
 <div id="mkdocs-decrypted-content">
     <form id="mkdocs-decrypt-form">
         <h1>This content is protected with AES encryption. </h1>
@@ -330,10 +835,6 @@
                     // any post processing on the decrypted content should be done here
                     
                     
-                    document.getElementById("mkdocs-decrypted-content").querySelectorAll('pre code').forEach((block) => {
-                        hljs.highlightBlock(block);
-                    });
-                    
                 } else {
                     // create HTML element for the inform message
                     var decrypt_msg = document.createElement('p');
@@ -381,60 +882,86 @@
         };
         document.addEventListener('DOMContentLoaded', init_decryptor);
     })();
-</script></div>
-            </div>
-        </div>
+</script>
+                
+              
+              
+                
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
 
-        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+              
+            </article>
+          </div>
         </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="./" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Rituals
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../business/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Mutualization
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     </div>
-</div>
-
-    </body>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
 </html>
