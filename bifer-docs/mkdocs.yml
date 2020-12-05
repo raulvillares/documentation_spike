@@ -1,6 +1,8 @@
 site_name: Bifer documentation
 theme:
   name: material
+  logo: img/logo.png
+  favicon: img/favicon.png
 plugins:
     - encryptcontent:
         title_prefix: ''
