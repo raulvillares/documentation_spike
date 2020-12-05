@@ -1,6 +1,39 @@
 site_name: Bifer documentation
 plugins:
     - encryptcontent:
+        title_prefix: ''
         global_password: 'nopassword'
         remember_password: True
         disable_cookie_protection: True
+nav:
+    - Team:
+        - On Boarding: 'team/index.md'
+        - Rituals: 'team/index.md'
+        - Coexistence: 'team/index.md'
+        - Tools: "team/index.md'"
+    - Business:
+        - Mutualization: "business/index.md"
+        - Resources: "business/index.md"
+    - Components:
+        - Felix : "components/index.md"
+        - Provision : "components/index.md"
+        - ACS : "components/index.md"
+        - Karajan : "components/index.md"
+        - Adagio/Limox : "components/index.md"
+    - Coding:
+        - Agreements: "coding/index.md"
+        - Local env: "coding/index.md"
+    - Systems:
+        - DNS: "systems/index.md"
+        - Proxmox: "systems/index.md"
+        - Backups: "systems/index.md"
+    - Infrastructure:
+        - Docker: "infrastructure/index.md"
+        - Rabbitmq: "infrastructure/index.md"
+        - Redis: "infrastructure/index.md"
+        - Redis: "infrastructure/index.md"
+        - Sentry: "infrastructure/index.md"
+    - Cookbook:
+        - Deploys: "cookbook/index.md"
+        - Tricks: "cookbook/index.md"
+
