@@ -1,0 +1,6 @@
+site_name: My Docs
+plugins:
+    - encryptcontent:
+        global_password: 'nopassword'
+        remember_password: True
+        disable_cookie_protection: True
