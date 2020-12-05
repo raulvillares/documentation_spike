@@ -15,11 +15,12 @@ mkvirtualenv documentation -p $(which python3)
 ### Install requirements
 
 ```
-pip intall -r requirements.txt
+./setup.sh
 ```
 
 ## :computer: Commands
 
+* `./setup.sh` - Setup environment.
 * `./serve.sh` - Start the live-reloading docs server.
 * `./serve_all_ips.sh` - Start the live-reloading docs server [listening on all ips](https://github.com/mkdocs/mkdocs/issues/1239). Usefull for remote development.
 * `./build.sh` - Build the documentation site.
